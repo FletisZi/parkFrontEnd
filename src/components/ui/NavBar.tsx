@@ -37,7 +37,7 @@ export function NavBar() {
           {/* DASHBOARD */}
           <li>
             <a
-              href="#dashboard"
+              href="#!"
               className="flex items-center gap-3 rounded-md px-2 py-2 hover:bg-blue-800/40"
             >
               <LayoutGridIcon className="w-5 "/>
@@ -73,9 +73,10 @@ export function NavBar() {
                 ${openMenu === "create" ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
               `}
             >
+              
               <li><a href="#create-user" className="block py-1">• Criar Usuário</a></li>
               <li><a href="#create-vaga" className="block py-1">• Criar Vaga</a></li>
-              <li><a href="#create-estacionamento" className="block py-1">• Criar Estacionamento</a></li>
+              <li><a href="/create-estacionamento" className="block py-1">• Criar Estacionamento</a></li>
             </ul>
           </li>
 
@@ -105,7 +106,7 @@ export function NavBar() {
                 ${openMenu === "parking" ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
               `}
             >
-              <li><a href="#listar" className="block py-1">• Listar</a></li>
+              <li><a href="/estacionamentos" className="block py-1">• Listar</a></li>
               <li><a href="#editar" className="block py-1">• Editar</a></li>
               <li><a href="#relatorios" className="block py-1">• Relatórios</a></li>
             </ul>

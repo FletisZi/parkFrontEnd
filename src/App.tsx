@@ -5,6 +5,10 @@ import { ValetScreen } from './pages/ValetScreen';
 import { AdminScreen } from './pages/AdminScreen';
 import { Car, User, ShieldCheck } from 'lucide-react';
 import { PageTeste } from './pages/PageTeste';
+import { Home } from './pages/Home';
+import { CreateEstacionamento } from './pages/CreateEstacionamento';
+import { ShowEstacionamento } from './pages/estacionamento/ShowEstacionamento';
+import DashboardOcupacao from './pages/estacionamento/Dashboard';
 function RoleSelection() {
   return <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <div className="max-w-4xl w-full">
@@ -58,11 +62,14 @@ function RoleSelection() {
 export function App() {
   return <Router>
       <Routes>
-        <Route path="/" element={<RoleSelection />} />
+        <Route path="/" element={<Home />} />
         <Route path="/client" element={<ClientScreen />} />
         <Route path="/valet" element={<ValetScreen />} />
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/teste" element={<PageTeste   />} />
+        <Route path="/create-estacionamento" element={<CreateEstacionamento   />} />
+        <Route path="/estacionamentos" element={<ShowEstacionamento   />} />
+        <Route path="/deash" element={<DashboardOcupacao   />} />
       </Routes>
     </Router>;
 }
