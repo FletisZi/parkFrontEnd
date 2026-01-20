@@ -1,7 +1,7 @@
 import { NavBar } from "../../components/ui/NavBar"
 import DashboardOcupacao from "./Dashboard"
 
-export HomeDeashboard() {
+export function HomeDeashboard() {
     return 
       <div>
           <NavBar />

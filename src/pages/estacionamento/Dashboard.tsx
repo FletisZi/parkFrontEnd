@@ -8,6 +8,7 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { NavBar } from "../../components/ui/NavBar";
 
 ChartJS.register(
   BarElement,
@@ -91,12 +92,20 @@ export default function DashboardOcupacao() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-md p-6">
-      <h2 className="text-xl font-semibold mb-4">
-        📊 Ocupação dos Estacionamentos
-      </h2>
+    <div>
+      <NavBar />
+      <div className="min-h-screen bg-gray-100 p-6">
+      <div className="max-w-5xl mx-auto">
+          <div className="bg-white rounded-xl shadow-md p-6">
+            <h2 className="text-xl font-semibold mb-4">
+              Ocupação dos Estacionamentos
+            </h2>
 
-      <Bar data={data} options={options} />
+            <Bar data={data} options={options} />
+          </div>
+        </div>
+      </div>
     </div>
+    
   );
 }

@@ -37,7 +37,7 @@ export function NavBar() {
           {/* DASHBOARD */}
           <li>
             <a
-              href="#!"
+              href="/deashboard"
               className="flex items-center gap-3 rounded-md px-2 py-2 hover:bg-blue-800/40"
             >
               <LayoutGridIcon className="w-5 "/>
@@ -75,7 +75,7 @@ export function NavBar() {
             >
               
               <li><a href="#create-user" className="block py-1">• Criar Usuário</a></li>
-              <li><a href="#create-vaga" className="block py-1">• Criar Vaga</a></li>
+              <li><a href="/create-vagas" className="block py-1">• Criar Vaga</a></li>
               <li><a href="/create-estacionamento" className="block py-1">• Criar Estacionamento</a></li>
             </ul>
           </li>

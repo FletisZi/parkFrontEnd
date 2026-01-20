@@ -9,6 +9,9 @@ import { Home } from './pages/Home';
 import { CreateEstacionamento } from './pages/CreateEstacionamento';
 import { ShowEstacionamento } from './pages/estacionamento/ShowEstacionamento';
 import DashboardOcupacao from './pages/estacionamento/Dashboard';
+import CriarVagas from './pages/CreateVagas';
+import VagasEstacionamento from './pages/estacionamento/VagasList';
+import VagasTeste from './pages/estacionamento/Vagas';
 function RoleSelection() {
   return <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <div className="max-w-4xl w-full">
@@ -69,7 +72,10 @@ export function App() {
         <Route path="/teste" element={<PageTeste   />} />
         <Route path="/create-estacionamento" element={<CreateEstacionamento   />} />
         <Route path="/estacionamentos" element={<ShowEstacionamento   />} />
-        <Route path="/deash" element={<DashboardOcupacao   />} />
+        <Route path="/deashboard" element={<DashboardOcupacao   />} />
+        <Route path="/create-vagas" element={<CriarVagas   />} />
+        <Route path="/vagas" element={<VagasEstacionamento   />} />
+        <Route path="*" element={<VagasTeste />} />
       </Routes>
     </Router>;
 }
