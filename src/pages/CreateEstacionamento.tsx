@@ -49,10 +49,10 @@ export function CreateEstacionamento() {
   };
 
   return (
-    <div>
+    <div className="h-screen flex">
       <NavBar />
 
-      <div className="ml-72 p-8">
+      <div className="max-w-md mt-14 mx-auto space-y-4 px-5">
         <h1 className="text-3xl font-bold mb-6">
           Create Estacionamento
         </h1>

@@ -12,12 +12,19 @@ export function NavBar() {
   return (
     <header
       className={`
-        fixed top-2 left-2 h-[96%] 
+        fixed z-[100] top-[1%]
+        sm:static sm:z-auto sm:top-auto
+
+        my-auto mx-[4px] h-[98%] 
         rounded-xl bg-gradient-to-b from-[#04093a] to-[#000647]
         text-white text-sm font-medium
         transition-all duration-300
         font-montserrat
-        ${collapsed ? "w-24" : "w-64"}
+        ${ collapsed ? `
+          h-[3rem] w-[3rem] rounded-full
+          sm:h-[98%] sm:w-24 sm:rounded-xl`: 
+          ` h-[98%] w-64 rounded-xl`
+        }
       `}
     >
       {/* BOTÃO RECOLHER */}
@@ -106,8 +113,8 @@ export function NavBar() {
                 ${openMenu === "parking" ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
               `}
             >
-              <li><a href="/estacionamentos" className="block py-1">• Listar</a></li>
-              <li><a href="#editar" className="block py-1">• Editar</a></li>
+              <li><a href="/vagas" className="block py-1">• Vagas</a></li>
+              <li><a href="/estacionamentos" className="block py-1">• Editar</a></li>
               <li><a href="#relatorios" className="block py-1">• Relatórios</a></li>
             </ul>
           </li>

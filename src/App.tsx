@@ -4,14 +4,13 @@ import { ClientScreen } from './pages/ClientScreen';
 import { ValetScreen } from './pages/ValetScreen';
 import { AdminScreen } from './pages/AdminScreen';
 import { Car, User, ShieldCheck } from 'lucide-react';
-import { PageTeste } from './pages/PageTeste';
 import { Home } from './pages/Home';
 import { CreateEstacionamento } from './pages/CreateEstacionamento';
 import { ShowEstacionamento } from './pages/estacionamento/ShowEstacionamento';
 import DashboardOcupacao from './pages/estacionamento/Dashboard';
 import CriarVagas from './pages/CreateVagas';
-import VagasEstacionamento from './pages/estacionamento/VagasList';
-import VagasTeste from './pages/estacionamento/Vagas';
+import Vagas from './pages/estacionamento/Vagas';
+import Checkin from './pages/estacionamento/Checkin';
 function RoleSelection() {
   return <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
       <div className="max-w-4xl w-full">
@@ -69,13 +68,15 @@ export function App() {
         <Route path="/client" element={<ClientScreen />} />
         <Route path="/valet" element={<ValetScreen />} />
         <Route path="/admin" element={<AdminScreen />} />
-        <Route path="/teste" element={<PageTeste   />} />
+        
         <Route path="/create-estacionamento" element={<CreateEstacionamento   />} />
         <Route path="/estacionamentos" element={<ShowEstacionamento   />} />
         <Route path="/deashboard" element={<DashboardOcupacao   />} />
         <Route path="/create-vagas" element={<CriarVagas   />} />
-        <Route path="/vagas" element={<VagasEstacionamento   />} />
-        <Route path="*" element={<VagasTeste />} />
+        <Route path="/vagas" element={<Vagas />} />
+        
+        <Route path="/teste" element={<Checkin   />} />
+
       </Routes>
     </Router>;
 }

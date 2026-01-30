@@ -1,4 +1,4 @@
-const API_BASE = "http://192.168.0.10:8080/api/v1";
+const API_BASE = "http://192.168.0.2:8080/api/v1";
 
 export async function getEstacionamentos() {
   const res = await fetch(`${API_BASE}/estacionamentos`);
@@ -19,7 +19,7 @@ export async function criarVaga(payload: any) {
 }
 
 export async function getVaga(vagaId: number) {
-  const res = await fetch(`${API_BASE}/vagas/${vagaId}`)
+  const res = await fetch(`${API_BASE}/estacionamentos/vagas/${vagaId}`)
   if (!res.ok) throw new Error('Erro ao buscar vaga')
   const json = await res.json()
   return json.data

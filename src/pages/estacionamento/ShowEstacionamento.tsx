@@ -44,10 +44,10 @@ export function ShowEstacionamento() {
   };
 
   return (
-    <div>
+    <div className="h-screen flex">
       <NavBar />
 
-      <div className="ml-72 p-8">
+      <div className="w-full max-w-[120rem] mx-auto p-5 mt-14">
         <h1 className="text-3xl font-bold mb-6">
           Lista de Estacionamentos
         </h1>
@@ -93,7 +93,7 @@ export function ShowEstacionamento() {
 
             <button
               onClick={salvar}
-              className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700"
+              className="w-full bg-blue-600 text-white py-2 rounded hover:bg-green-700"
             >
               Salvar
             </button>

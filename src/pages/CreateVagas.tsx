@@ -77,9 +77,9 @@ export default function CriarVagas() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="h-screen flex min-h-screen bg-gray-100 ">
       <NavBar />
-      <div className="max-w-md mx-auto space-y-4">
+      <div className="max-w-md mt-14 mx-auto space-y-4 px-5">
         <h1 className="text-2xl font-bold">Criar Vagas</h1>
 
         <select
